@@ -1,0 +1,56 @@
+
+<div class="container">
+    <div class="login-box">
+    <div class="py-5">
+      <div class="row">
+          <div class="col-md-10 mx-auto">
+              <span class="anchor" id="formLogin"></span>
+  
+              <div class="card-rounded-0">
+                  <div class="card-header">
+                      <h3 class="mb-0">Apply For Tender</h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="form">
+                          <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="text" [(ngModel)]="appieduserData.email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Enter Name</label>
+                              <input type="text" [(ngModel)]="appieduserData.name" name="name" class="form-control" id="exampleInputPassword1" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputconPassword1">Enter Phone number</label>
+                              <input type="number" [(ngModel)]="appieduserData.number" name="number" class="form-control" id="exampleInputconPassword1" placeholder="Valid Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputconPassword11">Location</label>
+                                <input type="text"  name="number" class="form-control" id="exampleInputconPassword11" placeholder="Location">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputconPassword111">Company Website</label>
+                                <input type="text"  name="number" class="form-control" id="exampleInputconPassword111" placeholder="Enter Company Website">
+                              </div>
+                            
+                            <div class="custom-control custom-checkbox pb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck1">
+                              <label class="custom-control-label" for="customCheck1">The details provided by me is Genuien</label>
+                            </div>
+                            <form> 
+                                <button type="button" (click)="applyUser()" class="btn btn-dark">Register</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="bg-light py-5">
+    <div class="container1"><div class="small text-center text-muted">Copyright © 2020 - WWW.OurRoads.COM</div></div>
+  </footer>
+  
+  

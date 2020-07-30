@@ -1,0 +1,9 @@
+.card-header h5{
+    text-align: center;
+    background-color: darkorange;
+    height: 50px;
+    padding-top: 10px;
+}
+.table-responsive h4{
+    text-align: center;
+}

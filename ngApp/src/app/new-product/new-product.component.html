@@ -1,0 +1,55 @@
+<div class="card">
+    <form (ngSubmit)="Addproduct()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>serial No.</label></td>
+                            <td><input type="text" name="p_id" [(ngModel)]="productItem.productId"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Road Name</label></td>
+                            <td><input type="text" name="p_name" [(ngModel)]="productItem.roadName"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Issue Related to Road</label></td>
+                            <td><input type="text" name="p_code" [(ngModel)]="productItem.issue"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Whether accident prone area?</label></td>
+                            <td><input type="text" name="p_releasedate" [(ngModel)]="productItem.accidentPornArea"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Rate of accidents out of 5</label></td>
+                            <td><input type="text" name="p_description" [(ngModel)]="productItem.rateOfAccident"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Complainer Name</label></td>
+                            <td><input type="text" name="p_price" [(ngModel)]="productItem.complainerName"></td>
+                        </tr>
+                        <!-- <tr>
+                            <td><label>Phone number</label></td>
+                            <td><input type="text" name="p_starrating" [(ngModel)]="phoneNumber"></td>
+                        </tr> -->
+                        <tr>
+                            <td><label> Upload an Image of your complaint</label></td>
+                            <td><input type="text" name="p_img" [(ngModel)]="productItem.imageUrl"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+<footer class="bg-light py-5">
+    <div class="container"><div class="small text-center text-muted">Copyright © 2020 - www.OurRoads.com</div></div>
+  </footer>

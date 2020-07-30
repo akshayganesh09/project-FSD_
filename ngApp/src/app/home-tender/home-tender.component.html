@@ -1,0 +1,90 @@
+
+
+
+<div class="card">
+    <div class="card-header">
+        <!-- <h2>{{title}}</h2> -->
+   
+    </div>
+    <div class="card-body">
+        
+        <div class="table-responsive">
+            <img class="img-kerala" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Kerala_Government_Emblem.png" alt="ImageUrl">
+            <h3>( GOVERNMENT OF KERALA )</h3>
+               <h3>OFFICE OF THE EXECUTIVE ENGINEER</h3> 
+               <h5>CIVIL ENGINEERING DIVISION NO. III ;KANNUR CORPORATION DEVELOPMENT BOARD</h5>
+               <h5>MUNCIPAL COMPLEX, 5th Floor, FD-415/A, KANNUR – 600001</h5> 
+            <hr color="black">
+           
+            <h4>NOTICE INVITING e_TENDER</h4>
+             <h4>  e-NIT NO – WBSDB/EE/CED-III/NIT-26(e)/2020-21</h4> 
+            <!-- <h4>July 2020</h4>  -->
+            <!-- <h6>(Revised as per G.O.(P)No.13/2012/PWD dated 01.02.2012)</h6> -->
+               <!-- <h5>Kannur Corporation, Munciple Complex, kannur=1</h5>  -->
+               <h6>Memo No :350/CED-III/ET-26/2020-21</h6>
+               <p>Dated :21.05.2020</p>
+<div class="car">
+    <p>Separate tenders are being invited by the Executive Engineer, Civil Engineering Division No.-III, Sundarban
+        Development Board on behalf of the Governor of West Bengal for the works mentioned in the list given below,
+        through electronic tendering (e-tendering) from eligible and resourceful contractors/bidders having sufficient
+        credential and financial capability for execution of works of similar nature.
+        Intending contractors/bidders desirous of participating in the tender are to login to the website
+        <a>www.OurRoAds.in.</a> The tender can be searched by typing the First Four Letters in the search engine
+        provided in the website.
+        Contractors/Bidders willing to take part in the process of e-tendering are required to obtain Digital Signature
+        Certificate (DSC) from any authorized Certifying Authority (CA) under CCA, Govt of India. (viz. nCode
+        Solution, Safescrypt, e-Mudhra, TCS, MTNL, IDRBT) or as notified by the Ca / Finance Department from time to
+        time. DSC is given as a USB e-Token. After obtaining the Class 3/Class 2 Digital Signature Certificate (DSC) from
+        the approved CA they are the fact of possessing the Digital Signature Certificates through the
+        registration system available in the website. A list of such licensed CA’s is also available in the CCA website
+        cca.gov.in.
+        Intending contractors/bidders are required to download the e-tender documents directly from the website
+        stated above. Tender is required to be submitted on-line with the help of the e-Tokens provided. This is the
+        only mode of submission of tender documents. The interested bidders eligible for the tender may submit
+        their bids through the e-Procurement system using their valid DSC e-Token with assigned PIN and using login
+        ID and password.</p>
+</div> 
+               
+            <table class="table">
+                
+                <thead>
+                    <tr>
+                        
+                        <th>Road Name</th>
+                        <th>Type of Work</th>
+                        <th>Estimated Coast</th>
+                        <th>Tender Fee</th>
+                        <th>Catogory</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let tender of tenders'>
+                        <!-- <td><img [src] = 'road.imageUrl'
+                            [title] = 'road.roadName'
+                            [style.width.px] = 'imageWidth'
+                            [style.height.px] = 'imageHeight'
+                            [style.margin.px] = 'imageMargin'>
+                        </td> -->
+                        <td>{{tender.NameofRoad}}</td>
+                        <td>{{tender.Nameofwork}}</td>
+                        <td>{{tender.estimate}}</td>
+                        <td>{{tender.tenderfee}}</td>
+                        <td>{{tender.catogory}}</td>
+                        
+                        <!-- <td><button class="btn btn-danger" (click)="deleteOne(road._id)" style="margin:10px;"> Delete </button></td>  -->
+                       <td><button type="button" routerLink="/booktender" class="btn btn-primary">Register</button></td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+</div>
+<footer class="bg-light py-5">
+    <div class="container"><div class="small text-center text-muted">Copyright © 2020 - WWW.OurRoads.COM</div></div>
+  </footer>
+  
+
+
+
+

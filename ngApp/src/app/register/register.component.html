@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="login-box">
+  <div class="py-5">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <span class="anchor" id="formLogin"></span>
+
+            <div class="card-rounded-0">
+                <div class="card-header">
+                    <h3 class="mb-0">Register</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="text" [(ngModel)]="registerUserData.email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" [(ngModel)]="registerUserData.password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputconPassword1">confirm Password</label>
+                            <input type="password" [(ngModel)]="registerUserData.conpassword" name="conpassword" class="form-control" id="exampleInputconPassword1" placeholder="Confirm Password">
+                          </div>
+                          <div class="form-group">
+                              <label>
+                              <input type="radio" value="male" name="gender">
+                               male </label>
+                         
+                            <label>
+                            <input type="radio" value="female" name="gender">
+                             female </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputnumber">Contact Number</label>
+                            <input type="number" [(ngModel)]="registerUserData.number" name="number" class="form-control" id="exampleInputnumber" placeholder="Contact Number">
+                          </div>
+                          <div class="custom-control custom-checkbox pb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Remember Me</label>
+                          </div>
+                          <form> 
+                            <button (click)="registerUse()" type="button"  class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="bg-light py-5">
+  <div class="container1"><div class="small text-center text-muted">Copyright © 2020 - WWW.OurRoads.COM</div></div>
+</footer>
+

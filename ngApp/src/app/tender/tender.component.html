@@ -1,0 +1,51 @@
+
+
+<div class="card">
+    <div class="card-header">
+        <h2>{{title}}</h2>
+        
+    </div>
+    <div class="card-body">
+        <h5><a class="nav-link" routerLink="/add1" routerLinkActive="active">Add Tender</a></h5>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        
+                        <th>Road Name</th>
+                        <th>Type of Work</th>
+                        <th>Estimated Coast</th>
+                        <th>Tender Fee</th>
+                        <th>Catogory</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let tender of tenders'>
+                        <!-- <td><img [src] = 'road.imageUrl'
+                            [title] = 'road.roadName'
+                            [style.width.px] = 'imageWidth'
+                            [style.height.px] = 'imageHeight'
+                            [style.margin.px] = 'imageMargin'>
+                        </td> -->
+                        <td>{{tender.NameofRoad}}</td>
+                        <td>{{tender.Nameofwork}}</td>
+                        <td>{{tender.estimate}}</td>
+                        <td>{{tender.tenderfee}}</td>
+                        <td>{{tender.catogory}}</td>
+                        
+                       <td><button class="btn btn-danger" (click)="deleteOnetender(tender._id)" style="margin:10px;"> Delete </button></td> 
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<footer class="bg-light py-5">
+    <div class="container"><div class="small text-center text-muted">Copyright © 2020 - WWW.OurRoads.COM</div></div>
+  </footer>
+  
+
+
+
+

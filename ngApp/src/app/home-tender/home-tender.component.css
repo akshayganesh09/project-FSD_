@@ -1,0 +1,32 @@
+.table-responsive h5{
+    text-align: center;
+}
+
+.table-responsive h4{
+    text-align: center;
+}
+.table-responsive h3{
+    text-align: center;
+}
+
+.table-responsive h6{
+    text-align: left;
+    /* color: rgb(106, 106, 241); */
+}
+.table-responsive p{
+    text-align: right;
+}
+.img-kerala{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.car p {
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.car a{ 
+    color: blue;
+}

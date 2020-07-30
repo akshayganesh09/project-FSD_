@@ -1,0 +1,19 @@
+.login-box{
+    width: 480px;
+
+    height: 690px;
+    background: rgba(0, 0, 0, 0.692);
+    /* color: #fff; */
+    box-sizing: border-box;
+    padding: 50px 30px;
+
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.container1{
+    padding-top: 700px;
+}

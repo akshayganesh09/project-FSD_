@@ -1,0 +1,52 @@
+<div class="card">
+    <form (ngSubmit)="AddTender()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>serial No.</label></td>
+                            <td><input type="text" name="p_id" [(ngModel)]="tenderItem.productId"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Road Name</label></td>
+                            <td><input type="text" name="p_name" [(ngModel)]="tenderItem.NameofRoad"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Type of Work</label></td>
+                            <td><input type="text" name="p_code" [(ngModel)]="tenderItem.Nameofwork"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Estimate coast</label></td>
+                            <td><input type="text" name="p_releasedate" [(ngModel)]="tenderItem.estimate"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Tender fee</label></td>
+                            <td><input type="text" name="p_description" [(ngModel)]="tenderItem.tenderfee"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Catagory of Work</label></td>
+                            <td><input type="text" name="p_price" [(ngModel)]="tenderItem.catogory"></td>
+                        </tr>
+                        <!-- <tr>
+                            <td><label>Phone number</label></td>
+                            <td><input type="text" name="p_starrating" [(ngModel)]="phoneNumber"></td>
+                        </tr> -->
+                        <!-- <tr>
+                            <td><label> Upload an Image of your complaint</label></td>
+                            <td><input type="text" name="p_img" [(ngModel)]="productItem.imageUrl"></td>
+                        </tr> -->
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

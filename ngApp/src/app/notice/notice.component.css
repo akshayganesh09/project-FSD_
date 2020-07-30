@@ -1,0 +1,41 @@
+.login-box{
+    width: 580px;
+
+    height: 560px;
+    background: rgb(226, 224, 224);
+    /* color: #fff; */
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    /* background-image: url(https://wallpaperaccess.com/full/1079103.jpg); */
+    background-position: center;
+}
+.form-group h1{
+    color: green;
+}
+.form-group h6{
+    color: black;
+    text-align: left;
+    
+}
+.card-rounded-0 h3{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.img-kerala{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: -50px;
+    padding-bottom: 20px;
+}
+.home{
+    text-align: right;
+}

@@ -1,0 +1,53 @@
+
+
+<div class="card">
+    <div class="card-header">
+        <!-- <h2>{{title}}</h2> -->
+        <h5> Complaints registered by the Public !</h5>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <h4><a class="nav-link " routerLink="/tender" routerLinkActive="active">Invite Tender</a></h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>image</th>
+                        <th>Road Name</th>
+                        <th>Issue</th>
+                        <th>Accident Prone Area</th>
+                        <th>Rate of Accident</th>
+                        <th>complainer Name</th>
+                        <!-- <th>Delete your issue</th>
+                        <th>Edit</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let road of roads'>
+                        <td><img [src] = 'road.imageUrl'
+                            [title] = 'road.roadName'
+                            [style.width.px] = 'imageWidth'
+                            [style.height.px] = 'imageHeight'
+                            [style.margin.px] = 'imageMargin'>
+                        </td>
+                        <td>{{road.roadName}}</td>
+                        <td>{{road.issue}}</td>
+                        <td>{{road.accidentPornArea}}</td>
+                        <td>{{road.rateOfAccident}}</td>
+                        <td>{{road.complainerName}}</td>
+                        
+                       <!-- <td><button class="btn btn-danger" (click)="deleteOne(road._id)" style="margin:10px;"> Delete </button></td> 
+                       <td><button class="btn btn-primary" (click)="editproduct(road._id)" style="margin:10px;"> Edit </button></td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<footer class="bg-light py-5">
+    <div class="container"><div class="small text-center text-muted">Copyright © 2020 - WWW.OurRoads.COM</div></div>
+  </footer>
+  
+
+
+
+
